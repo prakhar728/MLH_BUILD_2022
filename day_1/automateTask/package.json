@@ -1,0 +1,15 @@
+{
+  "name": "automatetask",
+  "version": "1.0.0",
+  "description": "Automating Gmeet invite",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.2"
+  }
+}
