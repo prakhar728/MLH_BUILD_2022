@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EncryptIT!</title>
+</head>
+
+<body>
+    <h1> ENCRYPT IT EASY</h1>
+    <div id="inputWrapper">
+        <form>
+            <input id="inputBox" type="text" placeholder="Password">
+            <button onclick="handleClick()" type="button">EncryptIT</button>
+        </form>
+    </div>
+    <div id="encryptedPassword">
+    </div>
+    <script>
+        function handleClick() {
+            var randomNumber = (Math.floor(Math.random() * 10));
+            var encryptedPassword = ' ';
+            var password = document.getElementById('inputBox').value;
+            for(var i=0;i<(document.getElementById('inputBox').value.length);i++){
+                encryptedPassword+= String.fromCharCode(password.charCodeAt(i)+randomNumber);
+            }
+            document.getElementById('encryptedPassword').innerHTML=encryptedPassword;
+        }
+    </script>
+</body>
+
+</html>

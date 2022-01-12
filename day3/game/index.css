@@ -1,0 +1,15 @@
+body{
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.scoreWrapper{
+    display: flex;
+    flex-direction: row;
+    border: 2px solid black;
+    align-items: center;
+    width: 150px;
+    justify-content: space-evenly;
+}
